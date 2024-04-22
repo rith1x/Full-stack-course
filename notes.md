@@ -127,9 +127,3 @@ Tags are used in HTML
 `<video>`
 `<wbr>`
 
-
-# Tags nd its Attributes
-
-Tags | Attributes | Why | Where
---- | --- | --- | ---
-`<a>` | `href` | | 

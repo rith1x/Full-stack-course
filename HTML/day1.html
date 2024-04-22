@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 1 Project</title>
+    </head>
+
+    <body>
+        <style>
+            body {
+                /* background-color: black; */
+                /* color: #fff; */
+                font-family: sans-serif;
+                text-transform: uppercase;
+            }
+
+            td {
+                width: 120px !important;
+                height: 40px;
+                text-align: center;
+                grid-gap: 0px;
+                border: solid 1px #ccc;
+                padding-inline: 10px;
+            }
+
+            th {
+                border: solid 1px #ccc;
+
+            }
+
+            th {
+                height: 100px;
+            }
+
+            th img {
+                height: 100px;
+            }
+
+            .reds tr td:nth-child(3) {
+                text-align: left;
+                width: fit-content;
+            }
+
+            .reds tr td table {
+                width: 100%;
+                border: none;
+            }
+
+            .reds tr td {
+                padding: 0 0 0 10px;
+            }
+
+            .reds tr td table tr:nth-child(1) {
+                font-weight: bold;
+
+            }
+
+            .reds tr td table tr:nth-child(5) {
+                font-weight: bold;
+
+            }
+
+            td.infox {
+                padding: 0;
+            }
+
+            .reds tr:nth-child(9) {
+                font-weight: bold;
+                padding-inline: 10px;
+
+            }
+        </style>
+
+        <table border="1" cellspacing="0" class="reds">
+            <tr>
+                <th rowspan="4">
+                    <img src="i/au.png" alt="">
+                </th>
+
+                <th colspan="6">Anna university, Chennai - 25</th>
+                <th rowspan="4">
+                    <img src="i/popcorn.png" alt="">
+                </th>
+            </tr>
+
+            <tr>
+
+                <td colspan="6">B.Tech. Degree Examinations</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="font-weight: bold;">Grade Sheet</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left;">Sl.No. 123456</td>
+                <td colspan="3" style="text-align: right;">Folio No. AU123456</td>
+
+            </tr>
+            <tr>
+                <td><b>Name</b></td>
+                <td colspan="5" style="text-align: left;">KIRUTHIK KUMAR R</td>
+                <td><b>Register Number</b></td>
+                <td>611221243303</td>
+            </tr>
+            <tr>
+                <td><b>Date of Birth</b></td>
+                <td>01-01-2004</td>
+                <td><b>Gender</b></td>
+                <td>male</td>
+                <td><b>Month & Year of Examination</b></td>
+                <td>Apr 2024</td>
+                <td><b>Date Of Publication</b></td>
+                <td>25-Feb-2020</td>
+            </tr>
+            <tr>
+                <td><b>College of Study</b></td>
+                <td colspan="5" style="text-align: left;">KNOWLEDGE INSTITUTE OF TECHNOLOGY</td>
+                <td><b>Regulations</b></td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td><b>Programme & Branch</b></td>
+                <td colspan="7" style="text-align: left;">B.Tech. Artificial Intelligence and Data Science</td>
+            </tr>
+            <tr>
+                <td>SEM. NO.</td>
+                <td>COURSE CODE</td>
+                <td colspan="2">COURSE TITLE</td>
+                <td>CREDITS</td>
+                <td>LETTER GRADE</td>
+                <td>Grade Point</td>
+                <td>Result</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>AD3301</td>
+                <td colspan="2">Data Exploration and Visualization</td>
+                <td>4</td>
+                <td>A</td>
+                <td>8</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>AD3311</td>
+                <td colspan="2">Artificial Intelligence Laboratory</td>
+                <td>1.5</td>
+                <td>O</td>
+                <td>10</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>AD3351</td>
+                <td colspan="2">Design and Analysis of Algorithm</td>
+                <td>4</td>
+                <td>A</td>
+                <td>8</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>AD3381</td>
+                <td colspan="2">Database Design and Management Laboratory</td>
+                <td>1.5</td>
+                <td>O</td>
+                <td>10</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>AD3391</td>
+                <td colspan="2">Database Design and Management</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>AL3391</td>
+                <td colspan="2">Artificial Intelligence</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>CS3351</td>
+                <td colspan="2">Digital Principles and Computer Organization</td>
+                <td>4</td>
+                <td>A</td>
+                <td>8</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>GE3361</td>
+                <td colspan="2">Professional Development</td>
+                <td>1</td>
+                <td>O</td>
+                <td>10</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>MA3354</td>
+                <td colspan="2">Discrete Mathematics</td>
+                <td>4</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+
+
+            <tr>
+                <td>04</td>
+                <td>AD3411</td>
+                <td colspan="2">Data Science and Analytics Laboratory</td>
+                <td>2</td>
+                <td>A+</td>
+                <td>9</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>AD3491</td>
+                <td colspan="2">Fundamentals of Data Science and Analytics</td>
+                <td>3</td>
+                <td>A</td>
+                <td>8</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>AL3451</td>
+                <td colspan="2">Machine Learning</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>AL3452</td>
+                <td colspan="2">Operating Systems</td>
+                <td>4</td>
+                <td>A+</td>
+                <td>9</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>AD3461</td>
+                <td colspan="2">Machine Learning Laboratory</td>
+                <td>2</td>
+                <td>A+</td>
+                <td>9</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>CS3591</td>
+                <td colspan="2">Computer Networks</td>
+                <td>4</td>
+                <td>A+</td>
+                <td>9</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>GE3451</td>
+                <td colspan="2">Environmental Science and Sustainability</td>
+                <td>2</td>
+                <td>A</td>
+                <td>8</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>MA3391</td>
+                <td colspan="2">Probability and Statistics</td>
+                <td>4</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>SB8021</td>
+                <td colspan="2">Naan Mudhalvan</td>
+                <td>2</td>
+                <td>O</td>
+                <td>10</td>
+                <td>PASS</td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>05</td>
+                <td>AD3501</td>
+                <td colspan="2">Deep Learning</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>AD3511</td>
+                <td colspan="2">Deep Learning Laboratory</td>
+                <td>3</td>
+                <td>O</td>
+                <td>10</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>AD3512</td>
+                <td colspan="2">Summer Internship</td>
+                <td>2</td>
+                <td>O</td>
+                <td>10</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>CCS334</td>
+                <td colspan="2">Big Data Analytics</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>CCS338</td>
+                <td colspan="2">Computer Vision</td>
+                <td>3</td>
+                <td>A</td>
+                <td>8</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>CCS349</td>
+                <td colspan="2">Image and Video Analytics</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>CS3551</td>
+                <td colspan="2">Distributed Computing</td>
+                <td>3</td>
+                <td>B+</td>
+                <td>7</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>CW3551</td>
+                <td colspan="2">Data and Information Security</td>
+                <td>3</td>
+                <td>A</td>
+                <td>8</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>MX3083</td>
+                <td colspan="2">Film Appreciation</td>
+                <td>3</td>
+                <td>A+</td>
+                <td>9</td>
+                <td>PASS</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>SB3081</td>
+                <td colspan="2">Naan Mudhalvan 2</td>
+                <td>2</td>
+                <td>O</td>
+                <td>10</td>
+                <td>PASS</td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="8" style="padding: 0; border: none;">
+                    <table cellspacing="0">
+                        <tr>
+                            <td>Semester</td>
+                            <td>I</td>
+                            <td>II</td>
+                            <td>III</td>
+                            <td>IV</td>
+                            <td>V</td>
+                            <td>VI</td>
+                            <td>VII</td>
+                            <td>VIII</td>
+                        </tr>
+                        <tr>
+                            <td class="bb"><b>Credits Registered</b></td>
+                            <td></td>
+                            <td></td>
+                            <td>26</td>
+                            <td>26</td>
+                            <td>35</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Credits Earned</b></td>
+                            <td></td>
+                            <td></td>
+                            <td>26</td>
+                            <td>19</td>
+                            <td>35</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Grade Points Earned</b></td>
+                            <td></td>
+                            <td></td>
+                            <td>75</td>
+                            <td>61</td>
+                            <td>98</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Grade Point Average</b></td>
+                            <td></td>
+                            <td></td>
+                            <td>7.92</td>
+                            <td>8.35</td>
+                            <td>8.18</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Cumulative Credits Earned</b></td>
+                            <td>80</td>
+                            <td colspan="3"><b>Cumulative Grade Point Average(CGPA)</b></td>
+                            <td>8.15</td>
+                            <td colspan="3"><b>MEDIUM OF INSTRUCTION : ENGLISH</b></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+            <tr class="lastlign">
+                <td colspan="2">Chennai - 25.<br>
+                    Date 07-04-2020
+                </td>
+                <td colspan="3">Signature of the candidate</td>
+                <td colspan="3">controller of examinations</td>
+
+            </tr>
+
+        </table>
+    </body>
+
+</html>
