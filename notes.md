@@ -182,3 +182,18 @@ Insert Multiple Datas
         ]
 }
 ```
+
+Update Data
+
+
+```
+> db.kiot.update({"_id":ObjectId("66289dff68db71630d4a5a5e")},{Name:"Reshma"})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.kiot.find()
+{ "_id" : ObjectId("6628927d5215f76af6758b09"), "Name" : "Rithik" }
+{ "_id" : ObjectId("6628948b5215f76af6758b0a"), "Name" : "Rithik", "Age" : 20, "Sex" : "Male", "City" : "Salem" }
+{ "_id" : ObjectId("66289dff68db71630d4a5a5d"), "Name" : "Mani", "Age" : 19 }
+{ "_id" : ObjectId("66289dff68db71630d4a5a5e"), "Name" : "Reshma" }
+
+```
+
