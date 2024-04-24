@@ -1,1 +1,5 @@
 day 1 10:45 html
+day 1 13:45 css
+day 2 09:00 Projects
+day 2 11:00 Javascript
+day 3 10:00 mongo db

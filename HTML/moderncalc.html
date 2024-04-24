@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="calc">
+            <div class="screen">
+                <input type="text" id="scr">
+            </div>
+            <div class="buttons">
+                <button onclick="inpyAdd('**2')">x<sup>2</sup></button>
+                <button onclick="inpyAdd('.')">.</button>
+                <button onclick="inpyAdd('/')">/</button>
+                <button onclick="clrScr()">AC</button>
+                <button onclick="inpyAdd('7')">7</button>
+                <button onclick="inpyAdd('8')">8</button>
+                <button onclick="inpyAdd('9')">9</button>
+                <button onclick="inpyAdd('*')">x</button>
+                <button onclick="inpyAdd('4')">4</button>
+                <button onclick="inpyAdd('5')">5</button>
+                <button onclick="inpyAdd('6')">6</button>
+                <button onclick="inpyAdd('-')">-</button>
+                <button onclick="inpyAdd('1')">1</button>
+                <button onclick="inpyAdd('2')">2</button>
+                <button onclick="inpyAdd('3')">3</button>
+                <button onclick="inpyAdd('+')">+</button>
+                <button onclick="bspace()">C</button>
+                <button onclick="inpyAdd('0')">0</button>
+                <button onclick="inpyAdd('00')">00</button>
+                <button onclick="eval()">=</button>
+            </div>
+        </div>
+        <script>
+            const scr = document.getElementById("scr");
+            let cureval = "";
+            function inpyAdd(vale) {
+                console.log(vale)
+                cureval += vale;
+                console.log(cureval)
+                scr.value = cureval;
+
+            }
+            function clrScr() {
+                cureval = "";
+                scr.value = cureval;
+
+            }
+            function bspace() {
+
+                scr.value = cureval;
+
+            }
+        </script>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                width: 100%;
+                height: 100dvh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .buttons {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+
+            .calc {
+                width: 300px;
+                border: solid 1px #aaa;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border-radius: 11px;
+                padding: 10px;
+            }
+
+            .screen {
+                height: 75px;
+                width: 100%;
+                border: solid 1px #aaa;
+                border-radius: 11px;
+                overflow: hidden;
+
+            }
+
+            @font-face {
+                font-family: dumer;
+                src: url(7seg.ttf);
+            }
+
+            .screen input {
+                width: 100%;
+                border: none;
+                direction: rtl;
+                padding: 10px;
+                height: 100%;
+                font-family: dumer;
+                font-size: 40px;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            button {
+                aspect-ratio: 1 / 1;
+                border: solid 1px #aaa;
+                font-size: 21px;
+                background-color: #d3a3ff;
+                border-radius: 11px;
+            }
+        </style>
+    </body>
+
+</html>

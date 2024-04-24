@@ -127,3 +127,46 @@ Tags are used in HTML
 `<video>`
 `<wbr>`
 
+# JavaScript 
+
+> JavaScript Engines
+---
+>> Chrome - V8
+
+>> Edge - Chakra 
+
+>> Firefox - SpyderMonkey
+
+---
+
+Dynamically typed = No need of defining Datatype
+
+# MongoDB
+
+show dbs - show databases
+
+db - show which db is selected
+
+show collections - show groups inside the db
+
+db.insertOne({Name:"Rithik"}) - Insert json into the collection
+
+^ this returns a response which has true or false to show it is stored or not
+
+```
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6628927d5215f76af6758b09")
+}
+```
+
+id is unique for each obj
+
+```
+> db.kiot.insertOne({Name:"Rithik", Age: 20, Sex: "Male", City: "Salem"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6628948b5215f76af6758b0a")
+}
+```
+
