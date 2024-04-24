@@ -170,3 +170,15 @@ id is unique for each obj
 }
 ```
 
+Insert Multiple Datas
+
+```
+> db.kiot.insertMany([{Name: "Mani", Age:19},{Name:"Reshmi", Age:20}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("66289dff68db71630d4a5a5d"),
+                ObjectId("66289dff68db71630d4a5a5e")
+        ]
+}
+```
