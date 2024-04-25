@@ -1,4 +1,4 @@
-# NOTES
+# NOTES - Ft
 
 ## Frontend + integration + Backend + Database = FullStack
 
